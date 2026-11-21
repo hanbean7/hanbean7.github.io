@@ -37,5 +37,5 @@ TL072 operational amplifier.
 
 ## Contact
 
-- LinkedIn: [https://www.linkedin.com/in/lukashkim/]
-- GitHub: [https://github.com/hanbean7]
+- LinkedIn: https://www.linkedin.com/in/lukashkim/
+- GitHub: https://github.com/hanbean7
