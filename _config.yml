@@ -1,11 +1,4 @@
 title: Lukas Kim
-description: >
-  Mechatronics Engineering Student at
-  Toronto Metropolitan University.
-  Interested in Robotics, Autonomous Systems,
-  and Embedded Programming.
-
-remote_theme: pages-themes/minimal@v0.2.0
-
-plugins:
-  - jekyll-remote-theme
+description: Mechatronics Engineering Student | Robotics, Autonomous Systems & Embedded Programming
+url: "https://hanbean7.github.io"
+baseurl: ""
