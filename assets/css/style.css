@@ -269,5 +269,176 @@ footer {
   .project-grid,
   .skills-grid {
     grid-template-columns: 1fr;
+
+/* ==================================
+   TYPOGRAPHY & LAYOUT REFINEMENTS
+   ================================== */
+
+/* Global typography */
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.035em;
+}
+
+h1, h2, h3 {
+  color: #355872;
+}
+
+/* Navigation */
+
+header {
+  background: #F7F8F0;
+}
+
+.navbar {
+  max-width: 1180px;
+  padding: 22px 32px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Main content */
+
+.hero,
+.section {
+  max-width: 1180px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 72vh;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.08;
+  margin: 18px 0 24px;
+}
+
+.hero h2 {
+  max-width: 780px;
+  font-size: clamp(23px, 3vw, 36px);
+  line-height: 1.35;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.hero > p:not(.eyebrow) {
+  max-width: 620px;
+  font-size: 17px;
+  line-height: 1.85;
+  margin-top: 26px;
+}
+
+/* Section layout */
+
+.section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.section h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+  margin: 12px 0 32px;
+}
+
+.section > p:not(.eyebrow) {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Small section labels */
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+/* Project card typography */
+
+.project-card {
+  padding: 30px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  margin: 14px 0;
+}
+
+.project-card > p:not(.project-type) {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Buttons */
+
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 26px;
+  border-radius: 8px;
+}
+
+/* Mobile refinements */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .hero,
+  .section {
+    padding: 65px 20px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 10vw, 56px);
+  }
+
+  .hero h2 {
+    font-size: 23px;
+  }
+
+  .hero > p:not(.eyebrow) {
+    font-size: 15px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+  }
+
+  .project-card {
+    padding: 24px;
   }
 }
