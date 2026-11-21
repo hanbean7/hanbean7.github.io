@@ -35,7 +35,8 @@ TL072 operational amplifier.
 - Electronics: Circuit Design, Breadboarding
 - Interests: Robotics, Embedded Systems, Automation
 
+
 ## Contact
 
-- LinkedIn: https://www.linkedin.com/in/lukashkim/
-- GitHub: https://github.com/hanbean7
+- [LinkedIn](https://www.linkedin.com/in/lukashkim/)
+- [GitHub](https://github.com/hanbean7)
