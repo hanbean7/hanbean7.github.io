@@ -1,4 +1,3 @@
-
 /* =========================================
    LUKAS KIM — ENGINEERING PORTFOLIO
    ========================================= */
@@ -65,7 +64,6 @@ header {
   max-width: 1180px;
   margin: 0 auto;
   padding: 22px 32px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,7 +134,6 @@ header {
   min-height: 72vh;
   padding-top: 110px;
   padding-bottom: 110px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,11 +179,9 @@ header {
   display: inline-block;
   padding: 14px 26px;
   border-radius: 8px;
-
   font-size: 14px;
   font-weight: 600;
   text-align: center;
-
   transition:
     transform 0.2s ease,
     background 0.2s ease,
@@ -225,12 +220,10 @@ header {
   display: flex;
   flex-direction: column;
   height: 100%;
-
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 30px;
-
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -267,7 +260,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-
   margin-top: auto;
   padding-top: 20px;
 }
@@ -277,7 +269,6 @@ header {
   background: #EAF5FC;
   border: 1px solid var(--border);
   border-radius: 5px;
-
   color: var(--text);
   font-size: 12px;
   line-height: 1.5;
@@ -327,14 +318,15 @@ footer {
   text-align: center;
   padding: 28px;
   border-top: 1px solid var(--border);
-
   color: var(--muted);
   font-size: 13px;
 }
 
 /* ---------- ACCESSIBILITY ---------- */
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible,
+.carousel-viewport:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
   border-radius: 4px;
@@ -347,7 +339,10 @@ a:focus-visible {
 
   .btn,
   .project-card,
-  .nav-links a {
+  .nav-links a,
+  .project-link,
+  .carousel-dot,
+  .carousel-track {
     transition: none;
   }
 
@@ -357,9 +352,7 @@ a:focus-visible {
   }
 }
 
-/* =========================================
-   TABLET RESPONSIVENESS
-   ========================================= */
+/* ---------- TABLET RESPONSIVENESS ---------- */
 
 @media (max-width: 900px) {
   .project-grid {
@@ -367,14 +360,9 @@ a:focus-visible {
   }
 }
 
-/* =========================================
-   MOBILE RESPONSIVENESS
-   ========================================= */
+/* ---------- MOBILE RESPONSIVENESS ---------- */
 
 @media (max-width: 768px) {
-
-  /* Navigation */
-
   .navbar {
     flex-direction: column;
     gap: 16px;
@@ -387,14 +375,10 @@ a:focus-visible {
     gap: 12px 20px;
   }
 
-  /* Sections */
-
   .hero,
   .section {
     padding: 65px 20px;
   }
-
-  /* Hero */
 
   .hero {
     min-height: auto;
@@ -414,13 +398,9 @@ a:focus-visible {
     font-size: 15px;
   }
 
-  /* Section headings */
-
   .section h2 {
     font-size: 32px;
   }
-
-  /* Project cards */
 
   .project-grid {
     grid-template-columns: 1fr;
@@ -430,12 +410,9 @@ a:focus-visible {
     padding: 24px;
   }
 
-  /* Skills */
-
   .skills-grid {
     grid-template-columns: 1fr;
   }
-
 }
 
 /* ---------- SMALL PHONES ---------- */
@@ -527,7 +504,7 @@ a:focus-visible {
   padding-top: 0;
 }
 
-/* Development progress */
+/* ---------- DEVELOPMENT PROGRESS ---------- */
 
 .progress-list {
   display: flex;
@@ -557,7 +534,137 @@ a:focus-visible {
   background: var(--accent);
 }
 
-/* Mobile project pages */
+/* ---------- PROJECT LINKS ---------- */
+
+.project-link {
+  display: inline-block;
+  margin-top: 22px;
+  color: #527FA0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* =========================================
+   ROOMBA DRAGGABLE SCREENSHOT GALLERY
+   ========================================= */
+
+.project-gallery {
+  margin-bottom: 75px;
+}
+
+.gallery-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.gallery-heading h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.gallery-hint {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.gallery-description {
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 12px 0 25px;
+}
+
+.roomba-carousel {
+  width: 100%;
+}
+
+.carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #241B1B;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.carousel-viewport:active {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 300ms ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  aspect-ratio: 800 / 680;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.carousel-dot {
+  appearance: none;
+  width: 20px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 100px;
+  background: var(--border);
+  cursor: pointer;
+  transition:
+    width 300ms ease,
+    background-color 300ms ease;
+}
+
+.carousel-dot.active {
+  width: 36px;
+  background: var(--text);
+}
+
+.carousel-dot:hover {
+  background: var(--accent);
+}
+
+.carousel-counter {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+/* ---------- MOBILE PROJECT PAGES ---------- */
 
 @media (max-width: 768px) {
   .project-page {
@@ -580,29 +687,12 @@ a:focus-visible {
     margin-bottom: 50px;
   }
 
-  .project-detail h2 {
+  .project-detail h2,
+  .gallery-heading h2 {
     font-size: 26px;
   }
-}
 
-
-/* ---------- PROJECT LINKS ---------- */
-
-.project-link {
-  display: inline-block;
-  margin-top: 22px;
-  color: #527FA0;
-  font-size: 14px;
-  font-weight: 600;
-  transition: color 0.2s ease;
-}
-
-.project-link:hover {
-  color: var(--text);
-  text-decoration: underline;
-}
-
-.project-link:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 4px;
+  .project-gallery {
+    margin-bottom: 55px;
+  }
 }
