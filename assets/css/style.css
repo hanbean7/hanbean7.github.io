@@ -457,3 +457,130 @@ a:focus-visible {
     gap: 10px 16px;
   }
 }
+
+/* =========================================
+   PROJECT DETAIL PAGES
+   ========================================= */
+
+.project-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 65px 32px 100px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #527FA0;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 42px;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.project-intro {
+  margin-bottom: 75px;
+}
+
+.project-intro h1 {
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.12;
+  margin: 18px 0 24px;
+}
+
+.project-lead {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.project-intro .tags {
+  margin-top: 28px;
+  padding-top: 0;
+}
+
+.project-detail {
+  margin-bottom: 65px;
+}
+
+.project-detail h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.project-detail h3 {
+  font-size: 20px;
+  margin: 28px 0 10px;
+}
+
+.project-detail p {
+  color: var(--muted);
+  line-height: 1.9;
+  max-width: 780px;
+}
+
+.project-detail .tags {
+  margin-top: 20px;
+  padding-top: 0;
+}
+
+/* Development progress */
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.progress-list > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--muted);
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.progress-dot.complete {
+  background: #4C9A80;
+}
+
+.progress-dot.planned {
+  background: var(--accent);
+}
+
+/* Mobile project pages */
+
+@media (max-width: 768px) {
+  .project-page {
+    padding: 45px 20px 75px;
+  }
+
+  .project-intro {
+    margin-bottom: 55px;
+  }
+
+  .project-intro h1 {
+    font-size: 40px;
+  }
+
+  .project-lead {
+    font-size: 16px;
+  }
+
+  .project-detail {
+    margin-bottom: 50px;
+  }
+
+  .project-detail h2 {
+    font-size: 26px;
+  }
+}
