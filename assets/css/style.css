@@ -584,3 +584,25 @@ a:focus-visible {
     font-size: 26px;
   }
 }
+
+
+/* ---------- PROJECT LINKS ---------- */
+
+.project-link {
+  display: inline-block;
+  margin-top: 22px;
+  color: #527FA0;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.project-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
