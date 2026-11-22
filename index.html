@@ -2,28 +2,45 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-        content="Lukas Kim's Mechatronics Engineering portfolio.">
+        content="Lukas Kim's Mechatronics Engineering portfolio featuring robotics, embedded systems, and electronics projects.">
 
   <title>Lukas Kim | Engineering Portfolio</title>
 
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet"
+        href="/assets/css/style.css">
+
 </head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <body>
 
-  <!-- Navigation -->
+  <!-- ==========================
+       NAVIGATION
+       ========================== -->
+
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
+
       <a href="#home" class="logo">LK.</a>
 
       <div class="nav-links">
@@ -32,19 +49,31 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
+
     </nav>
   </header>
 
+
   <main>
 
-    <!-- Hero -->
+    <!-- ==========================
+         HERO SECTION
+         ========================== -->
+
     <section id="home" class="hero">
-      <p class="eyebrow">MECHATRONICS ENGINEERING STUDENT</p>
 
-      <h1>Hi, I'm <span>Lukas Kim.</span></h1>
+      <p class="eyebrow">
+        MECHATRONICS ENGINEERING STUDENT
+      </p>
 
-      <h2>Building at the intersection of
-        hardware and software.</h2>
+      <h1>
+        Hi, I'm <span>Lukas Kim.</span>
+      </h1>
+
+      <h2>
+        Building at the intersection of
+        hardware and software.
+      </h2>
 
       <p>
         I'm a second-year Mechatronics Engineering student
@@ -53,6 +82,7 @@
       </p>
 
       <div class="hero-buttons">
+
         <a href="#projects" class="btn primary">
           View My Projects
         </a>
@@ -60,12 +90,22 @@
         <a href="#contact" class="btn secondary">
           Get in Touch
         </a>
+
       </div>
+
     </section>
 
-    <!-- About -->
+
+    <!-- ==========================
+         ABOUT SECTION
+         ========================== -->
+
     <section id="about" class="section">
-      <p class="eyebrow">GET TO KNOW ME</p>
+
+      <p class="eyebrow">
+        GET TO KNOW ME
+      </p>
+
       <h2>About Me</h2>
 
       <p>
@@ -80,94 +120,166 @@
         where I can contribute to engineering projects and
         continue developing my technical skills.
       </p>
+
     </section>
 
-    <!-- Projects -->
+
+    <!-- ==========================
+         PROJECTS SECTION
+         ========================== -->
+
     <section id="projects" class="section">
-      <p class="eyebrow">MY WORK</p>
+
+      <p class="eyebrow">
+        MY WORK
+      </p>
+
       <h2>Featured Projects</h2>
 
       <div class="project-grid">
 
+        <!-- Project 1: Roomba Simulator -->
+
         <article class="project-card">
-          <p class="project-type">SOFTWARE / ROBOTICS</p>
-          <h3>C++ Robotic Vacuum Simulator</h3>
+
+          <p class="project-type">
+            SOFTWARE / ROBOTICS
+          </p>
+
+          <h3>
+            C++ Robotic Vacuum Simulator
+          </h3>
+
           <p>
             A 2D robotic vacuum simulator exploring
             autonomous navigation, obstacle avoidance,
             and grid-based room environments.
           </p>
+
           <div class="tags">
             <span>C++</span>
             <span>Windows API</span>
             <span>Simulation</span>
           </div>
+
         </article>
 
+
+        <!-- Project 2: Arduino -->
+
         <article class="project-card">
-          <p class="project-type">EMBEDDED SYSTEMS</p>
-          <h3>Arduino Electronics Projects</h3>
+
+          <p class="project-type">
+            EMBEDDED SYSTEMS
+          </p>
+
+          <h3>
+            Arduino Electronics Projects
+          </h3>
+
           <p>
             Hands-on electronics experiments involving
             digital and analog inputs, PWM, breadboarding,
             and microcontroller programming.
           </p>
+
           <div class="tags">
             <span>Arduino</span>
             <span>C/C++</span>
             <span>Electronics</span>
           </div>
+
         </article>
 
+
+        <!-- Project 3: Bass Preamp -->
+
         <article class="project-card">
-          <p class="project-type">ANALOG ELECTRONICS</p>
-          <h3>DIY Bass Guitar Preamplifier</h3>
+
+          <p class="project-type">
+            ANALOG ELECTRONICS
+          </p>
+
+          <h3>
+            DIY Bass Guitar Preamplifier
+          </h3>
+
           <p>
             Designing an analog bass guitar preamplifier
             using a TL072 operational amplifier to explore
             audio electronics and circuit design.
           </p>
+
           <div class="tags">
             <span>TL072</span>
             <span>Analog Circuits</span>
             <span>Audio</span>
           </div>
+
         </article>
 
       </div>
+
     </section>
 
-    <!-- Skills -->
+
+    <!-- ==========================
+         TECHNICAL SKILLS
+         ========================== -->
+
     <section id="skills" class="section">
-      <p class="eyebrow">WHAT I WORK WITH</p>
+
+      <p class="eyebrow">
+        WHAT I WORK WITH
+      </p>
+
       <h2>Technical Skills</h2>
 
       <div class="skills-grid">
+
         <div>
           <h3>Programming</h3>
-          <p>C++, Arduino, Object-Oriented Programming</p>
+          <p>
+            C++, Arduino, Object-Oriented Programming
+          </p>
         </div>
 
         <div>
           <h3>Electronics</h3>
-          <p>Analog Circuits, Breadboarding, PWM</p>
+          <p>
+            Analog Circuits, Breadboarding, PWM
+          </p>
         </div>
 
         <div>
           <h3>Engineering Design</h3>
-          <p>SolidWorks, AutoCAD, Technical Drawings</p>
+          <p>
+            SolidWorks, AutoCAD, Technical Drawings
+          </p>
         </div>
 
         <div>
           <h3>Development Tools</h3>
-          <p>Visual Studio Code, GCC, GitHub</p>
+          <p>
+            Visual Studio Code, GCC, GitHub
+          </p>
         </div>
+
       </div>
+
     </section>
 
-    <!-- Contact -->
+
+    <!-- ==========================
+         CONTACT SECTION
+         ========================== -->
+
     <section id="contact" class="section contact">
-      <p class="eyebrow">LET'S CONNECT</p>
+
+      <p class="eyebrow">
+        LET'S CONNECT
+      </p>
+
       <h2>Get in Touch</h2>
 
       <p>
@@ -176,20 +288,37 @@
       </p>
 
       <div class="hero-buttons">
+
         <a href="https://www.linkedin.com/in/lukashkim/"
-           target="_blank" rel="noopener noreferrer"
-           class="btn primary">LinkedIn</a>
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn primary">
+          LinkedIn
+        </a>
 
         <a href="https://github.com/hanbean7"
-           target="_blank" rel="noopener noreferrer"
-           class="btn secondary">GitHub</a>
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn secondary">
+          GitHub
+        </a>
+
       </div>
+
     </section>
 
   </main>
 
+
+  <!-- ==========================
+       FOOTER
+       ========================== -->
+
   <footer>
-    <p>&copy; 2026 Lukas Kim. Built with GitHub Pages.</p>
+    <p>
+      &copy; 2026 Lukas Kim.
+      Built with GitHub Pages.
+    </p>
   </footer>
 
 </body>
